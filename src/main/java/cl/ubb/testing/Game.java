@@ -3,12 +3,11 @@ package cl.ubb.testing;
 public class Game {
 	int score = 0;
 	int STRIKE = 10;
-	
 	public void roll(int pins){
-		if(pins == STRIKE){
+		if(pins == 10){
 			score+= STRIKE;
 		}
-		score+= pins;
+		score += pins; 
 	}
 	
 	public int score(){
