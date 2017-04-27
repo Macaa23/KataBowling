@@ -30,5 +30,19 @@ public class TestGame {
 		
 		assertEquals(17,result);
 	}
+	
+	@Test
+	public void ThreeRollsThreeStrikesShouldScoreSixty(){
+		Game g = new Game();
+		int result;
+		g.roll(10);
+		g.roll(10);
+		g.roll(10);
+		
+		result = g.score();
+		
+		assertEquals(60,result);
+		
+	}
 
 }
